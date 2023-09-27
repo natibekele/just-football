@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^6.4.12",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"animejs": "^3.2.1",
 		"three": "^0.156.1"
 	}

@@ -30,8 +30,8 @@
 
 	@media(max-width: 760px) {
 		.image-container {
-			width: 100%;
-			margin-left: 0;
+/*			width: 100%;*/
+/*			margin-left: 0;*/
 		}
 	}
 </style>

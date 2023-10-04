@@ -7,6 +7,7 @@
 
 	export let data;
 	let myPosts = data.posts
+	let notLatest = myPosts.slice(2);
 	// let myPosts = [{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'},
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'},
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'},
@@ -15,13 +16,13 @@
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'}]
 
     function addEmptyBlocks(){
-    	let paddedPosts = [...myPosts];
-        const rm = myPosts.length % 4;
+    	let paddedPosts = [...notLatest];
+        const rm = notLatest.length % 4;
 
         for(var x=0; x<rm; x++) {
         	paddedPosts.push({ empty: true })
         }
-        myPosts = paddedPosts
+        notLatest = paddedPosts
     }
 
     beforeUpdate(_ => {
@@ -30,6 +31,10 @@
     })
 </script>
 
+<svelte:head>
+    <title>Just--Football</title>
+    <meta name="description" content="A space for coaches, players and fans to learn about the game, push their understandign and enjoy what the world's game has to offer." />
+</svelte:head>
 <Header />
 <div>
 	<div class="hero-section">
@@ -41,7 +46,7 @@
 		<PostSummary post={myPosts[1]} />
 	</div>
 	<div class="main-grid">
-		{#each myPosts as post}
+		{#each notLatest as post}
 			<PostSummary post={post}/>
 		{/each}
 	</div>

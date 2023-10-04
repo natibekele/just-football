@@ -15,6 +15,10 @@
 
 <!-- <h1>{data.title}</h1>
 <div>{@html data.content}</div> -->
+<svelte:head>
+    <title>{post.title}</title>
+    <meta name="description" content={post.subtitle} />
+</svelte:head>
 <Header textColor={"var(--white)"}/>
 <div class="container">
     {#if post}

@@ -102,7 +102,7 @@
 		color: var(--white) !important;
 	}
 	.card:hover > .card--link > .card--subtitle {
-		display: none;
+/*		display: none;*/
 		opacity: 0;
 	}
 	.card:hover > .card-background {

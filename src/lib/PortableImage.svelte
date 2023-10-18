@@ -13,12 +13,9 @@
 <style type="text/css">
 	.image-container {
 		margin-left: -15%;
-		margin-top: 6.4rem;
-		margin-bottom: 6.4rem;
 		width: 130%;
 		height: auto;
 		max-height: 60rem;
-/*		max-height: 50rem;*/
 		overflow: hidden;
 		z-index: -1;
 	}

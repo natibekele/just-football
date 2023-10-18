@@ -1,7 +1,5 @@
 <script>
 	export let portableText;
-
-	console.log(portableText);
 </script>
 
 {#if portableText.value}

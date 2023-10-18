@@ -1,4 +1,5 @@
 <script>
+    import { beforeUpdate } from "svelte"
     import Header from "$lib/Header.svelte"
     import Marquee from "$lib/Marquee.svelte"
     import Footer from "$lib/Footer.svelte"
@@ -10,7 +11,8 @@
     import SpiralShader from "$lib/SpiralShader.svelte"
     /** @type {import('./$types').PageData} */
     export let data;
-    export let { post, suggestedPosts } = data;
+    $: ({ post, suggestedPosts } = data);
+
 </script>
 
 <!-- <h1>{data.title}</h1>
@@ -57,7 +59,7 @@
     {/if}
     <!-- other articles section/ so users can continue reading if they want to -->
     <!-- is this just football focused or am i writing about lifestuff as well? just football probably huh... -->
-    <SuggestedArticles suggestedPosts={[post, post, post,post ]}/>
+    <SuggestedArticles suggestedPosts={suggestedPosts}/>
 
     <div class="decoration-section">
         <SpiralShader />

@@ -4,6 +4,7 @@
 	--border-gray: #eee;
 	--accent: #E34F26;
 	--text-color:rgba(0,0,0,0.77);
+	--header-logo: #fff;
 }
 
 html, body {
@@ -45,8 +46,11 @@ h3 {
 	color: none;
 }*/
 
-@media(max-width: 768px) {
+@media(max-width: 800px) {
 	html,body {
 		overflow-x: hidden;
+	}
+	:root {
+		--header-logo: #000;
 	}
 }

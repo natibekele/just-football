@@ -21,7 +21,7 @@
     <title>{post.title}</title>
     <meta name="description" content={post.subtitle} />
 </svelte:head>
-<Header textColor={"var(--white)"}/>
+<Header textColor={"var(--header-logo)"}/>
 <div class="container">
     {#if post}
         <div class="post-hero">

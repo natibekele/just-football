@@ -7,6 +7,7 @@
 	</div>
 
 	<div class="footer--additional-links">
+		<h3><a target="_blank" href="https://aberash.xyz">ABERASH © </a></h3>
 	</div>
 </footer>
 
@@ -32,13 +33,18 @@
 		border-right: solid 1px lightgray;
 		padding: 1.6rem 3.2rem;
 	}
-	.additional-links {
+	.footer--additional-links {
 		display: flex;
 		align-items: flex-end;
 		padding: 1.6rem 2.4rem;
+		height: 100%;
 	}
 
 	h3 {
 		font-size: 1.8rem;
+	}
+	h3 > a {
+		text-decoration: none;
+		color: var(--black);
 	}
 </style>

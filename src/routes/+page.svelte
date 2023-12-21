@@ -1,5 +1,5 @@
 <script>
-	import { beforeUpdate } from "svelte"
+	import { beforeUpdate, onMount } from "svelte"
 	import PostSummary from "$lib/PostSummary.svelte"
 	import Header from "$lib/Header.svelte"
 	import Marquee from "$lib/Marquee.svelte"
@@ -14,18 +14,16 @@
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'},
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'},
 	// 	{ title: 'some title', subtitle: 'my subtite', publishDate: Date.now(), category: 'Tech', imageUrl: './textures/b&w.jpg'}]
-
     function addEmptyBlocks(){
     	let paddedPosts = [...notLatest];
-        const rm = notLatest.length % 4;
-
+        const rm = 4 - (notLatest.length % 4);
         for(var x=0; x<rm; x++) {
         	paddedPosts.push({ empty: true })
         }
         notLatest = paddedPosts
     }
 
-    beforeUpdate(_ => {
+    onMount(_ => {
     	if (document.body && document.body.clientWidth < 768) return;
     	addEmptyBlocks();
     })

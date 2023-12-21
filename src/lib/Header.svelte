@@ -39,7 +39,7 @@
 		<a href="/" class="links--link" style={`color: ${textColor}`}> Home 
 			<span class="block" style={`background: ${textColor}`}></span>
 		</a>
-		<a class="links--link" style={`color: ${textColor}`}> About
+		<a class="links--link" href="/about" style={`color: ${textColor}`}> About
 			<span class="block" style={`background: ${textColor}`}></span>
 		</a>
 	</div>
@@ -65,7 +65,7 @@
 
 	<div class="mobile-menu" bind:this={mobileMenuRef} on:click={handleHamburgerClick}>
 		<a href="/" class="mobile--link"> Home</a>
-		<a class="mobile--link"> About</a>
+		<a class="mobile--link" href="/about"> About</a>
 		<a class="mobile--link" href="https://instagram.com/natiboi_"> Instagram </a>
 		<a class="mobile--link" href="https://www.linkedin.com/in/nathan-shanko-5330b4a8/"> LinkedIn </a>
 	</div> 

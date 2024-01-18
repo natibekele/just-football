@@ -32,7 +32,7 @@
 <header class="header">
 	<a class="image-container" href="/">
 		<!-- <img class="logo" src="https://assets.website-files.com/63bc8b037c1f9ecfc030ecc3/63bf46d8ecb87169cd643750_Logo.svg" /> -->
-		<span class="logo" style={`color: ${textColor}`}> JUST -- FOOTBALL</span>
+		<span class="logo" style={`color: ${textColor}`}> FOOTBALL -- VILLAGE</span>
 	</a>
 
 	<div class="links links--navigation">

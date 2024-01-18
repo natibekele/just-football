@@ -15,7 +15,7 @@
 
 <article class="article">
 	<p>
-		At Just--Football, the aim is to foster continuous learning and enhance football analysis and coaching 	skills. This platform has been established as a central hub for all this football-related work.
+		At Football--Village, the aim is to foster continuous learning and enhance football analysis and coaching 	skills. This platform has been established as a central hub for all this football-related work.
 	</p>
 
 	<p>
@@ -23,7 +23,7 @@
 	</p>
 
 	<p>
-		The motivation behind Just--Football is multifaceted. Primarily, it aspires to be a learning sanctuary for aspiring coaches, football enthusiasts, and players seeking to deepen their understanding and enjoyment of the sport. The commitment to produce substantial content is an endeavor to personally grow and appreciate the intricacies of the game.
+		The motivation behind Football--Village is multifaceted. Primarily, it aspires to be a learning sanctuary for aspiring coaches, football enthusiasts, and players seeking to deepen their understanding and enjoyment of the sport. The commitment to produce substantial content is an endeavor to personally grow and appreciate the intricacies of the game.
 	</p>
 
 	<p>

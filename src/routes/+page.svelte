@@ -30,13 +30,13 @@
 </script>
 
 <svelte:head>
-    <title>Just--Football</title>
+    <title>Football--Village</title>
     <meta name="description" content="A space for coaches, players and fans to learn about the game, push their understandign and enjoy what the world's game has to offer." />
 </svelte:head>
 <Header />
 <div>
 	<div class="hero-section">
-		<Marquee text={"JUST FOOTBALL -- NO FILLER -- "}/>
+		<Marquee text={" FOOTBALL VILLAGE -- YOUR MODERN FOOTBALL HOME -- "}/>
 	</div>
 
 	<div class="latest-grid">

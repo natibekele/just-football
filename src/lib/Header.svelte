@@ -1,13 +1,13 @@
 <script type="text/javascript">
-	import anime from "animejs"
-	export let textColor = "var(--black)";
-	let hamburgerOpen = false
+	import anime from 'animejs';
+	export let textColor = 'var(--black)';
+	let hamburgerOpen = false;
 	let hamburgerRef;
 	let mobileMenuRef;
 
 	function handleHamburgerClick() {
 		if (hamburgerOpen) {
-			hamburgerRef.classList.remove('open')
+			hamburgerRef.classList.remove('open');
 			anime({
 				targets: mobileMenuRef,
 				translateX: 0,
@@ -15,7 +15,7 @@
 				duration: 100
 			});
 		} else {
-			hamburgerRef.classList.add('open')
+			hamburgerRef.classList.add('open');
 			anime({
 				targets: mobileMenuRef,
 				translateX: `-100%`,
@@ -24,9 +24,8 @@
 			});
 		}
 
-		hamburgerOpen = !hamburgerOpen
+		hamburgerOpen = !hamburgerOpen;
 	}
-
 </script>
 
 <header class="header">
@@ -36,39 +35,57 @@
 	</a>
 
 	<div class="links links--navigation">
-		<a href="/" class="links--link" style={`color: ${textColor}`}> Home 
-			<span class="block" style={`background: ${textColor}`}></span>
+		<a href="/" class="links--link" style={`color: ${textColor}`}>
+			Home
+			<span class="block" style={`background: ${textColor}`} />
 		</a>
-		<a class="links--link" href="/about" style={`color: ${textColor}`}> About
-			<span class="block" style={`background: ${textColor}`}></span>
+		<a class="links--link" href="/about" style={`color: ${textColor}`}>
+			About
+			<span class="block" style={`background: ${textColor}`} />
 		</a>
 	</div>
 
-	<div class="links links--socials" >
-		<a class="links--link" style={`color: ${textColor}`} href="https://instagram.com/natiboi_"> Instagram 
-			<span class="block" style={`background: ${textColor}`}></span>
+	<div class="links links--socials">
+		<a
+			class="links--link"
+			style={`color: ${textColor}`}
+			href="https://instagram.com/_footballvillage"
+		>
+			Instagram
+			<span class="block" style={`background: ${textColor}`} />
 		</a>
-		<a class="links--link" style={`color: ${textColor}`} href="https://www.linkedin.com/in/nathan-shanko-5330b4a8/"> LinkedIn
-			<span class="block" style={`background: ${textColor}`}></span>
+		<a class="links--link" style={`color: ${textColor}`} href="#">
+			Tactics Board
+			<span class="block" style={`background: ${textColor}`} />
 		</a>
-		<a class="links--link" style={`color: ${textColor}`} href="mailto:natibekele@gmail.com"> Email
-			<span class="block" style={`background: ${textColor}`}></span>
+		<a
+			class="links--link"
+			style={`color: ${textColor}`}
+			href="mailto:contact.football.village@gmail.com"
+		>
+			Email
+			<span class="block" style={`background: ${textColor}`} />
 		</a>
-	</div>
- 	
- 	<!-- MOBILE MENU START  -->
-	<div class="hamburger" on:click={handleHamburgerClick} bind:this={hamburgerRef}>
-		<div class="hamburger--row1"></div>
-		<div class="hamburger--row2"></div>
-		<div class="hamburger--row3"></div>
 	</div>
 
-	<div class="mobile-menu" bind:this={mobileMenuRef} on:click={handleHamburgerClick}>
+	<!-- MOBILE MENU START  -->
+	<div
+		class="hamburger"
+		on:click={handleHamburgerClick}
+		bind:this={hamburgerRef}
+		aria-label="toggle mobile menu"
+	>
+		<div class="hamburger--row1" />
+		<div class="hamburger--row2" />
+		<div class="hamburger--row3" />
+	</div>
+
+	<div class="mobile-menu" bind:this={mobileMenuRef}>
 		<a href="/" class="mobile--link"> Home</a>
 		<a class="mobile--link" href="/about"> About</a>
-		<a class="mobile--link" href="https://instagram.com/natiboi_"> Instagram </a>
-		<a class="mobile--link" href="https://www.linkedin.com/in/nathan-shanko-5330b4a8/"> LinkedIn </a>
-	</div> 
+		<a class="mobile--link" href="https://instagram.com/_footballvillage"> Instagram </a>
+		<a class="mobile--link" href="#"> Tactics Board </a>
+	</div>
 </header>
 
 <style>
@@ -115,7 +132,7 @@
 		font-size: 1.5rem;
 		font-weight: bold;
 		text-decoration: none;
-/*		color: var(--black);*/
+		/*		color: var(--black);*/
 		transition: ease-out 0.2s;
 		cursor: pointer;
 	}
@@ -126,7 +143,7 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
-/*		background: var(--black);*/
+		/*		background: var(--black);*/
 		left: 0;
 		bottom: -100%;
 		transition: ease-out 0.3s;
@@ -138,7 +155,9 @@
 		height: 4rem;
 		width: 4rem;
 	}
-	.hamburger--row1,.hamburger--row2,.hamburger--row3 {
+	.hamburger--row1,
+	.hamburger--row2,
+	.hamburger--row3 {
 		height: 4px;
 		width: 100%;
 		background: var(--black);
@@ -149,7 +168,8 @@
 	.hamburger.open {
 		background: green;
 	}
-	.mobile-menu, .hamburger {
+	.mobile-menu,
+	.hamburger {
 		display: none;
 	}
 	.mobile-menu {
@@ -170,21 +190,21 @@
 		font-size: 5.6rem;
 		font-weight: 500;
 	}
-/*	.hamburger.open > .hamburger--row1 {
+	/*	.hamburger.open > .hamburger--row1 {
 
 	}*/
-	@media(max-width: 800px) {
+	@media (max-width: 800px) {
 		.header {
 			background: var(--white);
 		}
-		.mobile-menu, .hamburger {
+		.mobile-menu,
+		.hamburger {
 			display: block;
 		}
 	}
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		.links {
 			display: none;
 		}
 	}
-
 </style>
